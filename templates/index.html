@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Copatible" content="ie-edge">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+     <title>E-leclerc</title>
+     {% load static %}
+     <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  {% csrf_token %}
+  {% load static %}
+
+  <!-- START HERE -->
+
+  <main class="main-background">
+  
+     <section id="showcase" class="py-3">
+            
+         
+         
+                <a href="#mycarousel" data-slide="prev" class="carousel-control-prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+         
+                <a href="#mycarousel" data-slide="next" class="carousel-control-next">
+                     <span class="carousel-control-next-icon"></span>
+                 </a>
+            </div> 
+         </section>
+         
+         
+          <section id="navbarTop">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top navbar-light ml-auto">
+            <a class="navbar__brand" href="#"><img  src="{% static 'logo.jpg'%}"><h6 class="navbar__h6">HouseInYourHands-</h6> </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <i class="fas fa-align-center"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a  class="nav-link hover" href="/index">Home</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " data-toggle="dropdown">
+                            Services 
+                          </a>
+                             <div class="dropdown-menu dropdown-sub">
+                                 <a href="audiophile.html" class="dropdown-item nav-link">
+                                  Audiophile Consulting
+                                </a>
+                                 <a href="interior-decoration.html" class="dropdown-item nav-link">
+                                     Interior Decoration
+                                 </a>
+
+                                 <a href="funieture-making.html" class="dropdown-item nav-link">
+                                    Furniture Making
+                               </a>
+                             </div>
+                           </li>
+                         <li class="nav-item">
+                        <a class="nav-link" href="/signin">SignIN</a>
+                        </li>
+                    
+                        <li class="nav-item">
+                        <a class="nav-link" href="/signup">SignUP</a>
+                        </li>
+                </ul>
+            </div>
+    </nav>
+   
+    
+</section>
+  <!-- HOME ICON SECTION -->
+
+  <section id="home-heading" class="p-5">
+    <div class="dark-overlay">
+        <div class="row">
+            <div class="col">
+               <div class="container pt-5">
+                   <h1>Your Dream Home, Matched with the Perfect Architect</h1>
+                   <p>
+                    At HouseInYourHands , we believe that your dream home starts with your unique vision. Share your ideas and thoughts about your perfect home or interior design in your own language, and our innovative AI technology will match you with the best architects in your area. We bridge the gap between your imagination and expert architectural design, ensuring that your vision is brought to life by top professionals who understand your style and needs.
+                   </p>
+                   
+                </center>
+               </div> 
+            </div>
+        </div>
+    </div>  
+  </section>
+
+  <!--INFO SECTION 1 & 2 --------->
+  
+
+ <!-------- Services Section ------------->
+<section class="services-area" id="services">
+    <div class="container">
+        <div class="section-title text-center mt-3">
+           <h1>Services</h1>
+            
+        </div>
+        
+        <div class="row mt-3"> 
+            <div class="col-md-4 col-sm-6 col-xs-12"><a href="/chat_bot">
+               <div class="services-warp text-center">
+                   <div class="service-icon">
+                      <i class="<i class="fa-solid fa-sitemap"></i>
+                   </div>
+                   <h3>Architecture</h3>
+                   <p class="services-area__heading-text-2">Discover innovative architectural solutions tailored to your vision, blending functionality and aesthetics to create timeless designs.</p>
+               </div>
+            </div></a>
+            
+             <div class="col-md-4 col-sm-6 col-xs-12"><a href="/chat_bot">
+               <div class="services-warp text-center">
+                   <div class="service-icon">
+                       <i class="fab fa-angrycreative"></i>
+                   </div>
+                   <h3>Interior design</h3>
+                   <p>Transform your spaces with personalized interior design that reflects your style and enhances comfort, beauty, and functionality.</p>
+               </div>
+            </div></a>
+            
+             <div class="col-md-4 col-sm-6 col-xs-12"><a href="/chat_bot">
+               <div class="services-warp text-center">
+                   <div class="service-icon">
+                       <i class="fa-solid fa-map-location-dot"></i>
+                   </div>
+                   <h3>Locality</h3>
+                   <p>Explore the best neighborhoods with insights into local amenities, lifestyle, and connectivity, helping you find the perfect place to call home.</p>
+               </div>
+            </div></a>
+        </div>
+          
+            
+             
+            
+</section>
+<!-------- End Of Services Section ------------->
+
+  <!--- Gallery SECTION ---->
+  <section id="team">
+    <div class="container">
+      <h1>Designs</h1>
+      <div class="row">   
+        <div class="col-md-6 profile-pic text-center">
+          <div class="img-box">
+            <img src="{% static 'IMG-1.jpg'%}" alt="Light Stands" class="img-responsive">                
+          </div> 
+          <h2>Graceful Appeal</h2>
+          <h3>Relax in a Cozy Butterfly-Themed Lounge</h3>
+          <p>A cozy living room featuring butterfly-patterned chairs, wooden partitions, and soft lighting for a warm, relaxed feel..</p>
+        </div>
+  
+        <div class="col-md-6 profile-pic text-center">
+          <div class="img-box">
+            <img src="{% static 'IMG-2.jpg'%}" alt="Bedroom Furniture" class="img-responsive">          
+          </div> 
+          <h2>Chic Design</h2>
+          <h3>Modern Minimalist Living Room</h3>
+          <p>A sleek, modern living space with curved architecture, a leather sofa, glass coffee table, and large windows letting in natural light..</p>
+        </div>
+  
+        <div class="col-md-6 profile-pic text-center">
+          <div class="img-box">
+            <img src="{% static 'IMG-4.jpg'%}" alt="Furniture" class="img-responsive">             
+          </div> 
+          <h2>Timeless Style</h2>
+          <h3>Luxury Contemporary Villa</h3>
+          <p>Experience Luxury in this Contemporary Villa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!----GET IN TOUCH---->
+  
+
+
+   <!--FOOTER-->
+   <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="{% static 'logo.jpg'%}" class="footer-logo" alt="Logo">
+        </div>
+        
+        <div class="col-md-3">
+          <h1>Features</h1>
+          <p>Certified Trainers</p>
+          <p>Free Consultation</p>
+          <p>Flexible Time</p>
+          <p>30 Days Free Trial</p>
+        </div>
+        
+        <div class="col-md-3">
+          <h1>Quick Contact</h1>
+          <p><i class="fa fa-phone-square"></i> +91 6204781284</p>
+          <p><i class="fa fa-envelope"></i> Homeinyourhands@gmail.com</p>
+          <p><i class="fa fa-home"></i> Uttarakhand</p>
+          <p class="city">Dehradun</p>
+        </div>
+        
+        <div class="col-md-3">
+          <h1>Follow Us on Social Media</h1>
+          <p><i class="fab fa-facebook-square"></i> Facebook</p>
+          <p><i class="fab fa-youtube"></i> YouTube</p>
+          <p><i class="fab fa-linkedin"></i> LinkedIn</p>
+          <p><i class="fab fa-twitter"></i> Twitter</p>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </section>
+  
+    
+    
+ <script src="js/smooth-scroll.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- bootstrap js -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!--script js --->
+
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+    
+      //navbar--Animation
+
+    $(document).ready(function(){
+
+$('.navbar-nav li a').addClass('border-animation');
+
+    });
+</script>
+    </main>
+</body>
+</html>
